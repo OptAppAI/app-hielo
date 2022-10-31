@@ -1,0 +1,100 @@
+.taskBar{
+  grid-area: BarraTareas;
+  width: 100%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 4fr 1fr 1.1fr;
+  grid-template-areas: "Ventas Productos Clientes Empleados Ruta Logo Usuario Sesion";
+  background-color: white;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.taskBar > div{
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskBar >div >nav {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.taskBar >div:hover{
+  background: #f0f0f0;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.taskBar .Ventas{
+  grid-area: Ventas;
+  height: 100%;
+}
+
+.taskBar .Productos{
+  grid-area: Productos;
+  height: 100%;
+}
+
+.taskBar .Clientes{
+  grid-area: Clientes;
+  height: 100%;
+}
+
+.taskBar .Empleados{
+  grid-area: Empleados;
+  height: 100%;
+}
+
+.taskBar .Ruta{
+  grid-area: Ruta;
+  height: 100%;
+}
+
+.taskBar .Logo{
+  grid-area: Logo;
+}
+
+.taskBar .Usuario{
+  grid-area: Usuario;
+  height: 100%;
+}
+
+.taskBar .Sesion{
+  grid-area: Sesion;
+  height: 100%;
+}
+
+.taskBar .Usuario:hover{
+  background: none;
+}
+
+.taskBar .Logo:hover{
+  background: none;
+  color: black;
+  height: 100%;
+  box-shadow: none;
+}
+
+.taskBar >div >nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskBar >div >nav >a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  user-select: none;
+}
